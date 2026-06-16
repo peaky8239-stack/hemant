@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Premium customized academic color scale */
+  --color-brand-blue: #0B2545;
+  --color-brand-blue-light: #134074;
+  --color-brand-blue-deep: #081B33;
+  --color-brand-gold: #C69214;
+  --color-brand-gold-light: #F4E5C3;
+  --color-brand-gold-dark: #9F730D;
+  --color-brand-teal: #1E3D59;
+}
+
+/* Custom premium scrollbar and elegant selection styling */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #FFFFFF;
+    color: #1E293B;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #F4E5C3;
+    color: #0B2545;
+  }
+
+  /* Custom scrollbar matching premium theme */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8FAFC;
+    border-left: 1px solid #E2E8F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border: 2px solid #F8FAFC;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+/* Premium educational container shadows and borders (no glass/blur) */
+.premium-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+  border-color: #CBD5E1;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.elegant-badge {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #0B2545;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.navy-gold-gradient {
+  background: linear-gradient(135deg, #0B2545 0%, #134074 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #9F730D 0%, #C69214 50%, #E6C262 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
