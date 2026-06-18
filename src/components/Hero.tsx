@@ -4,7 +4,7 @@ import {
   ArrowRight, Phone, MessageSquare, Award, Users, 
   MapPin, CheckCircle2, GraduationCap, Star
 } from 'lucide-react';
-import heroClassroom from '../assets/images/classroom_hero_hq_1781705629025.jpg';
+import heroClassroom from '../assets/images/classroom_seminar_premium_hq_1781788314079.jpg';
 
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
@@ -120,8 +120,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <div className="relative rounded-2xl overflow-hidden border-4 border-slate-100 bg-slate-100 shadow-xl aspect-video sm:aspect-auto">
                 <img 
                   src={heroClassroom} 
-                  alt="Students studying inside a bright modern classroom at Hemant Classes Kalyanpur" 
-                  className="w-full h-[600px] min-h-[600px] sm:min-h-0 sm:h-[400px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
+                  alt="Students studying inside a bright modern premium classroom at Hemant Classes" 
+                   className="w-full h-[260px] sm:h-[400px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
                   referrerPolicy="no-referrer"
                 />
                 
@@ -131,10 +131,10 @@ export default function Hero({ onScrollToSection }: HeroProps) {
                 {/* Floating caption on the image */}
                 <div className="absolute bottom-4 left-4 right-4 text-left p-1 text-white">
                   <div className="flex items-center gap-1.5 mb-1 text-brand-gold text-xs font-bold uppercase tracking-widest font-mono">
-                    <Star className="h-3.5 w-3.5 fill-brand-gold text-brand-gold" /> Real Classroom View
+                    <Star className="h-3.5 w-3.5 fill-brand-gold text-brand-gold" /> Premium Seminar Hall
                   </div>
                   <p className="text-xs font-medium text-slate-100 leading-snug">
-                    Spacious, clean, and modern study desks at our Kalyanpur training wing.
+                    Comfortable ergonomic seating and premium projector-guided smart lecture facilities.
                   </p>
                 </div>
               </div>

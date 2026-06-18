@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Image, ZoomIn, X, Sparkles, BookOpen, Star, HelpCircle } from 'lucide-react';
 import scienceLab from '../assets/images/physics_optics_girls_hq_1781786106878.jpg';
 import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
-import heroClassroom from '../assets/images/classroom_hero_hq_1781705629025.jpg';
+import heroClassroom from '../assets/images/classroom_seminar_premium_hq_1781788314079.jpg';
 import teacherMentoringBoy from '../assets/images/teacher_mentoring_boy_hq_1781786123379.jpg';
 import teacherMentoringGirls from '../assets/images/teacher_mentoring_girls_hq_1781786139016.jpg';
 
@@ -13,7 +13,7 @@ export default function VisualGallery() {
   const galleryItems = [
     {
       url: heroClassroom,
-      title: 'Primary Teaching Desk',
+      title: 'Premium Smart Seminar Hall',
       category: 'Smart Classroom View',
       span: 'md:col-span-2 md:row-span-2'
     },
