@@ -35,8 +35,8 @@ export default function Contact() {
                 </div>
                 <div className="space-y-1 text-left">
                   <span className="text-[10px] text-slate-500 font-mono tracking-wider block uppercase font-bold">PHYSICAL STUDY CAMPUS</span>
-                  <p className="text-sm font-extrabold text-brand-blue">Kalyanpur Center</p>
-                  <p className="text-xs text-slate-600 leading-relaxed font-sans">Kalyanpur, Kanpur, Uttar Pradesh 208017, India</p>
+                  <p className="text-sm font-extrabold text-brand-blue">Ratan Lal Nagar Center</p>
+                  <p className="text-xs text-slate-600 leading-relaxed font-sans">Ratan Lal Nagar, Kanpur, Uttar Pradesh 208022, India</p>
                 </div>
               </div>
 
@@ -102,17 +102,17 @@ export default function Contact() {
           </div>
 
           {/* Map Embed Frame (Cols: 7) */}
-          <div className="lg:col-span-7 h-full min-h-[350px]">
+          <div className="lg:col-span-7 w-full h-[300px] md:h-[400px]">
             <div className="h-full w-full rounded-2xl border border-slate-200 bg-slate-50 overflow-hidden shadow-sm p-2">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!1s0x399c386616db6149%3A0xeebdcbcfbe13c6b6!2sKalyanpur%2C%20Kanpur%2C%20Uttar%20Pradesh%20208017!5e0!3m2!1sen!2sin!4v1718300000000!5m2!1sen!2sin" 
+                src="https://maps.google.com/maps?q=Hemant%20Coaching%20Classes%2C%20Ratan%20Lal%20Nagar%2C%20Kanpur%2C%20Uttar%20Pradesh%20208022%20India&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0, minHeight: '350px', background: '#f8fafc', borderRadius: '12px' }} 
+                style={{ border: 0, background: '#f8fafc', borderRadius: '12px' }} 
                 allowFullScreen={true}
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hemant Coaching Classes, Kalyanpur, Kanpur Map Location"
+                title="Hemant Coaching Classes, Ratan Lal Nagar, Kanpur Map Location"
               />
             </div>
           </div>

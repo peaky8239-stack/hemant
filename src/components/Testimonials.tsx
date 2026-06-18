@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Quote, ArrowLeft, ArrowRight, MessageSquare, Heart, Star } from 'lucide-react';
 import { STUDENT_TESTIMONIALS, PARENT_TESTIMONIALS } from '../data';
+import topperAniket from '../assets/images/topper_aniket_hq_1781786157298.jpg';
+import topperRohan from '../assets/images/topper_rohan_hq_1781786173192.jpg';
+import topperPriya from '../assets/images/topper_priya_hq_1781786191838.jpg';
 
 // Map testifiers to actual warm human faces for premium conversion rates
 const AVATAR_IMAGES: Record<string, string> = {
   'Rajesh Verma': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop', // Kanpur Dad profile
   'Meenakshi Sharma': 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop', // Kanpur Mom profile
   'Sardar Gurpreet Singh': 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop', // Proud Sikh Dad profile
-  'Aniket Dwivedi': 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&auto=format&fit=crop', // Elite Topper Aniket
-  'Priya Gupta': 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop', // Class 10th Topper Priya
-  'Rohan Malhotra': 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop' // Science Topper Rohan
+  'Aniket Dwivedi': topperAniket, // Elite Topper Aniket
+  'Priya Gupta': topperPriya, // Class 10th Topper Priya
+  'Rohan Malhotra': topperRohan // Science Topper Rohan
 };
 
 export default function Testimonials() {

@@ -1,5 +1,9 @@
 import React from 'react';
 import { Award, GraduationCap, TrendingUp, Sparkles, Star, Users } from 'lucide-react';
+import topperAniket from '../assets/images/topper_aniket_hq_1781786157298.jpg';
+import topperRohan from '../assets/images/topper_rohan_hq_1781786173192.jpg';
+import topperPriya from '../assets/images/topper_priya_hq_1781786191838.jpg';
+import topperShreya from '../assets/images/topper_shreya_hq_1781786206852.jpg';
 
 export default function Achievements() {
   const stats = [
@@ -15,28 +19,28 @@ export default function Achievements() {
       score: '98% in Maths', 
       board: 'CBSE Class XII', 
       remarks: 'Kanpur District Rank 2',
-      image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=300&auto=format&fit=crop'
+      image: topperAniket
     },
     { 
       name: 'Priya Gupta', 
       score: '96.4% in Science', 
       board: 'CBSE Class X', 
       remarks: 'Grade A1 Double Distinction',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop'
+      image: topperPriya
     },
     { 
       name: 'Rohan Malhotra', 
       score: '95.2% in Physics', 
       board: 'UP Board Class XII', 
       remarks: 'State Merit List',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300&auto=format&fit=crop'
+      image: topperRohan
     },
     { 
       name: 'Shreya Shukla', 
       score: '97% in Commerce', 
       board: 'CBSE Class XII', 
       remarks: 'Accountancy 100/100',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop'
+      image: topperShreya
     }
   ];
 

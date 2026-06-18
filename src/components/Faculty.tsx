@@ -1,13 +1,17 @@
 import React from 'react';
 import { FACULTY_DATA } from '../data';
 import { GraduationCap, Briefcase, Award, Sparkles, Star } from 'lucide-react';
+import facultyHemantKumar from '../assets/images/faculty_hemant_kumar_hq_1781787181896.jpg';
+import facultyPriyaShukla from '../assets/images/faculty_priya_shukla_hq_1781787201832.jpg';
+import facultySkDwivedi from '../assets/images/faculty_sk_dwivedi_hq_1781787220098.jpg';
+import facultyAnjaliMishra from '../assets/images/faculty_anjali_mishra_hq_1781787239285.jpg';
 
 // Map faculty IDs to professional profile portraits of highly credible friendly educators
 const FACULTY_IMAGES: Record<string, string> = {
-  'f1': 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=300&auto=format&fit=crop', // Friendly expert male director
-  'f2': 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&auto=format&fit=crop', // Serious, cheerful female chemistry expert PhD
-  'f3': 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300&auto=format&fit=crop', // Respectable elderly commerce expert of 15 yrs
-  'f4': 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&auto=format&fit=crop'  // Smiling early preschool childcare supervisor
+  'f1': facultyHemantKumar, // Friendly expert male director
+  'f2': facultyPriyaShukla, // Serious, cheerful female chemistry expert PhD
+  'f3': facultySkDwivedi, // Respectable elderly commerce expert of 15 yrs
+  'f4': facultyAnjaliMishra  // Smiling early preschool childcare supervisor
 };
 
 export default function Faculty() {

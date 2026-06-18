@@ -1,7 +1,7 @@
 import React from 'react';
 import { Monitor, BookOpen, FlaskConical, Users, Shield, Calendar, Clock, Smile } from 'lucide-react';
 import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
-import scienceLab from '../assets/images/science_lab_students_1781618034689.jpg';
+import scienceLab from '../assets/images/physics_optics_girls_hq_1781786106878.jpg';
 import classroomSeminar from '../assets/images/classroom_seminar_hq_1781784559363.jpg';
 import smartClass from '../assets/images/smart_class_interactive_hq_1781784595932.jpg';
 

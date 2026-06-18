@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Image, ZoomIn, X, Sparkles, BookOpen, Star, HelpCircle } from 'lucide-react';
-import scienceLab from '../assets/images/science_lab_students_1781618034689.jpg';
+import scienceLab from '../assets/images/physics_optics_girls_hq_1781786106878.jpg';
 import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
 import heroClassroom from '../assets/images/classroom_hero_hq_1781705629025.jpg';
+import teacherMentoringBoy from '../assets/images/teacher_mentoring_boy_hq_1781786123379.jpg';
+import teacherMentoringGirls from '../assets/images/teacher_mentoring_girls_hq_1781786139016.jpg';
 
 export default function VisualGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -16,7 +18,7 @@ export default function VisualGallery() {
       span: 'md:col-span-2 md:row-span-2'
     },
     {
-      url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop',
+      url: teacherMentoringBoy,
       title: 'Foundations Library Corner',
       category: 'Child Cognitive Study',
       span: ''
@@ -28,7 +30,7 @@ export default function VisualGallery() {
       span: 'md:col-span-2'
     },
     {
-      url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop',
+      url: teacherMentoringGirls,
       title: 'Peer Discussion Circles',
       category: 'Restricted Batch Hub',
       span: ''
@@ -40,7 +42,7 @@ export default function VisualGallery() {
       span: 'md:col-span-2'
     },
     {
-      url: 'https://images.unsplash.com/photo-1544531585-9847b66c6186?q=80&w=600&auto=format&fit=crop',
+      url: teacherMentoringGirls,
       title: '1-on-1 Concept Explanations',
       category: 'Personalized Help-Desks',
       span: ''
