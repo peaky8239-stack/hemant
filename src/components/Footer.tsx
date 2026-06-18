@@ -4,6 +4,7 @@ import {
   Linkedin, Facebook, Youtube, ShieldAlert,
   ArrowUp, Sparkles, LayoutDashboard
 } from 'lucide-react';
+import Logo from './Logo';
 
 interface FooterProps {
   onOpenAdmin: () => void;
@@ -52,17 +53,7 @@ export default function Footer({ onOpenAdmin, onScrollToSection }: FooterProps) 
               onClick={() => handleLinkClick('home')}
               className="flex items-center gap-2 group cursor-pointer text-left focus:outline-none"
             >
-              <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-brand-gold-light/20">
-                <BookOpen className="h-5 w-5 text-brand-blue" />
-              </div>
-              <div>
-                <span className="block font-display font-black leading-none tracking-tight text-white uppercase text-base">
-                  HEMANT
-                </span>
-                <span className="block text-[10px] font-mono tracking-widest text-[#C69214] font-bold uppercase mt-1">
-                  Coaching Classes
-                </span>
-              </div>
+              <Logo showText={true} light={true} />
             </button>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-sans max-w-sm">

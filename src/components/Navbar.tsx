@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, BookOpen, Phone, MessageSquare, ShieldCheck, Download } from 'lucide-react';
+import Logo from './Logo';
 
 interface NavbarProps {
   onOpenAdmin: () => void;
@@ -82,19 +83,9 @@ export default function Navbar({ onOpenAdmin, onScrollToSection }: NavbarProps) 
             {/* Header branding logo */}
             <button 
               onClick={() => handleLinkClick('home')}
-              className="flex items-center gap-2.5 group text-left cursor-pointer focus:outline-none"
+              className="flex items-center gap-2.5 group text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue/50 rounded-lg"
             >
-              <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-brand-blue border border-brand-gold-light/40 shadow-sm transition group-hover:bg-brand-blue-light">
-                <BookOpen className="h-5 w-5 text-brand-gold-light transition group-hover:scale-110" />
-              </div>
-              <div>
-                <span className="block font-display font-extrabold leading-tight tracking-tight text-brand-blue sm:text-base">
-                  HEMANT
-                </span>
-                <span className="block text-[10px] font-mono font-bold tracking-widest text-brand-gold uppercase sm:text-[11px]">
-                  COACHING CLASSES
-                </span>
-              </div>
+              <Logo showText={true} light={false} />
             </button>
 
             {/* Desktop Navigation Links */}
