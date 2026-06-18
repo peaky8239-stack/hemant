@@ -117,11 +117,11 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
               {/* Premium Hero Multi-Image Collage Container */}
-              <div className="relative rounded-2xl overflow-hidden border-4 border-slate-100 bg-slate-100 shadow-xl aspect-video sm:aspect-auto">
+              <div className="relative rounded-2xl overflow-hidden border-4 border-slate-100 bg-slate-100 shadow-xl">
                 <img 
                   src={heroClassroom} 
                   alt="Students studying inside a bright modern premium classroom at Hemant Classes" 
-                   className="w-full h-[260px] sm:h-[400px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
+                   className="w-full h-[350px] sm:h-[440px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
                   referrerPolicy="no-referrer"
                 />
                 
