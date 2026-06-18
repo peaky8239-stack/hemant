@@ -3,7 +3,12 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Check, ArrowRight, Notebook, BookOpen, Layers, Award } from 'lucide-react';
 import { COURSES_DATA } from '../data';
 import { Course } from '../types';
-import scienceLab from '../assets/images/science_lab_students_1781618034689.jpg';
+import playgroupClassroom from '../assets/images/playgroup_classroom_hq_1781781914071.jpg';
+import primaryStudent from '../assets/images/primary_student_hq_1781781935982.jpg';
+import middleSchoolLaptops from '../assets/images/middle_school_laptops_hq_1781781968517.jpg';
+import secondaryCooperation from '../assets/images/secondary_cooperation_hq_1781781950041.jpg';
+import chemistryScienceLab from '../assets/images/chemistry_science_lab_hq_1781784577983.jpg';
+import commerceWriting from '../assets/images/commerce_writing_hq_1781784635327.jpg';
 
 interface CoursesProps {
   onInquireCourse: (courseTitle: string) => void;
@@ -11,12 +16,12 @@ interface CoursesProps {
 
 // Map each Course to a stunning, context-appropriate photo
 const COURSE_IMAGES: Record<string, string> = {
-  'pg': 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=600&auto=format&fit=crop', // Colorful preschool sensory play
-  'primary': 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop', // Primary school children reading
-  'middle': 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop', // Smart tablet/numerical study
-  'secondary': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop', // Interactive board discussion 
-  'science-11-12': scienceLab, // Our generated high-tech science lab students!
-  'commerce-11-12': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop' // Real transactions & analytical spreadsheets
+  'pg': playgroupClassroom, // High quality sensory play and classroom
+  'primary': primaryStudent, // Primary Class 1 to 5 academic excellence
+  'middle': middleSchoolLaptops, // Middle Class 6 to 8 active learning
+  'secondary': secondaryCooperation, // High School Class 9 & 10 teamwork
+  'science-11-12': chemistryScienceLab, // Premium chemistry liquid physics experiments
+  'commerce-11-12': commerceWriting // Beautiful and sharp commerce accounting studies
 };
 
 export default function Courses({ onInquireCourse }: CoursesProps) {
@@ -46,7 +51,7 @@ export default function Courses({ onInquireCourse }: CoursesProps) {
   const filteredCourses = COURSES_DATA.filter(filterCourses);
 
   return (
-    <section id="courses" className="relative py-24 bg-slate-50 overflow-hidden border-b border-slate-100 text-left">
+    <section id="courses" className="relative py-24 bg-slate-50 border-b border-slate-100 text-left">
       {/* Decorative vector shape */}
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-blue/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -103,7 +108,7 @@ export default function Courses({ onInquireCourse }: CoursesProps) {
                 className="flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 shadow-md hover:shadow-xl group"
               >
                 {/* Course Card Top Photo */}
-                <div className="relative h-44 overflow-hidden bg-slate-100">
+                <div className="relative h-[320px] min-h-[320px] sm:min-h-0 sm:h-44 overflow-hidden bg-slate-100">
                   <img 
                     src={COURSE_IMAGES[course.id] || COURSE_IMAGES['middle']} 
                     alt={course.title}

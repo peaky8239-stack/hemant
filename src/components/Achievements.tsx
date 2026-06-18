@@ -41,7 +41,7 @@ export default function Achievements() {
   ];
 
   return (
-    <section id="results" className="relative py-24 bg-white overflow-hidden border-b border-slate-100 text-left">
+    <section id="results" className="relative py-24 bg-white border-b border-slate-100 text-left">
       <div className="absolute inset-0 bg-[radial-gradient(#C69214_0.4px,transparent_0.4px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
@@ -103,7 +103,7 @@ export default function Achievements() {
                     className="flex flex-col rounded-2xl border border-slate-200 bg-white hover:border-[#C69214]/50 hover:shadow-md transition duration-300 overflow-hidden"
                   >
                     {/* Student Photo Header Frame */}
-                    <div className="relative h-40 overflow-hidden bg-slate-100">
+                    <div className="relative h-[350px] min-h-[350px] sm:min-h-0 sm:h-40 overflow-hidden bg-slate-100">
                       <img 
                         src={student.image} 
                         alt={student.name}

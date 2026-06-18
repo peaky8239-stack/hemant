@@ -35,7 +35,7 @@ export default function AdmissionProcess() {
   ];
 
   return (
-    <section id="admissions-timeline" className="relative py-24 bg-slate-50 overflow-hidden border-b border-t border-slate-100">
+    <section id="admissions-timeline" className="relative py-24 bg-slate-50 border-b border-t border-slate-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

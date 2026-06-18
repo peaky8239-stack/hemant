@@ -6,7 +6,7 @@ import {
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 bg-white overflow-hidden border-b border-slate-100">
+    <section id="contact" className="relative py-24 bg-white border-b border-slate-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

@@ -46,7 +46,7 @@ export default function TrustIndicators() {
   ];
 
   return (
-    <section id="trust-pillars" className="relative py-20 bg-slate-50 border-t border-b border-slate-100 overflow-hidden">
+    <section id="trust-pillars" className="relative py-20 bg-slate-50 border-t border-b border-slate-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Title */}

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Monitor, BookOpen, FlaskConical, Users, Shield, Calendar, Clock, Smile } from 'lucide-react';
-import studentLounge from '../assets/images/student_lounge_1781618051031.jpg';
+import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
 import scienceLab from '../assets/images/science_lab_students_1781618034689.jpg';
+import classroomSeminar from '../assets/images/classroom_seminar_hq_1781784559363.jpg';
+import smartClass from '../assets/images/smart_class_interactive_hq_1781784595932.jpg';
 
 export default function CampusLife() {
   const cards = [
@@ -9,7 +11,7 @@ export default function CampusLife() {
       title: 'Smart AC Classrooms',
       subtitle: 'Comfortable Academic Chambers',
       desc: 'Our air-conditioned classrooms are designed with wide study desks and whiteboards to maximize optical ergonomics, high focus, and physical safety.',
-      image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&auto=format&fit=crop',
+      image: classroomSeminar,
       icon: Monitor,
       badge: 'High Focus Space'
     },
@@ -33,7 +35,7 @@ export default function CampusLife() {
       title: '15-Student Master Batches',
       subtitle: 'Collaborative Bench Circles',
       desc: 'By limiting seating directories strictly to 15, we foster interactive inquiry, immediate individual doubt rectification, and friendly competition.',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop',
+      image: smartClass,
       icon: Users,
       badge: 'Individual Care Limits'
     }
@@ -47,7 +49,7 @@ export default function CampusLife() {
   ];
 
   return (
-    <section id="campus-life" className="relative py-24 bg-white overflow-hidden border-b border-slate-100 text-left">
+    <section id="campus-life" className="relative py-24 bg-white border-b border-slate-100 text-left">
       {/* Background Dots */}
       <div className="absolute inset-x-0 bottom-0 h-40 bg-[radial-gradient(#C69214_0.4px,transparent_0.4px)] [background-size:16px_16px] opacity-10 pointer-events-none" />
 

@@ -12,7 +12,7 @@ const FACULTY_IMAGES: Record<string, string> = {
 
 export default function Faculty() {
   return (
-    <section id="faculty" className="relative py-24 bg-white overflow-hidden border-b border-slate-100 text-left">
+    <section id="faculty" className="relative py-24 bg-white border-b border-slate-100 text-left">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

@@ -11,7 +11,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faqs" className="relative py-24 bg-slate-50 overflow-hidden border-b border-slate-100">
+    <section id="faqs" className="relative py-24 bg-slate-50 border-b border-slate-100">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

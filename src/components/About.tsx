@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, Compass, BookOpenCheck, BrainCircuit, HeartHandshake, Award, Search, Sparkles } from 'lucide-react';
-import studentLounge from '../assets/images/student_lounge_1781618051031.jpg';
+import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
 
 export default function About() {
   const methodologies = [
@@ -22,7 +22,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative py-24 bg-white overflow-hidden border-b border-slate-100 text-left">
+    <section id="about" className="relative py-24 bg-white border-b border-slate-100 text-left">
       {/* Subtle modern vector background lines */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-gold-light/10 rounded-full blur-3xl pointer-events-none" />
       

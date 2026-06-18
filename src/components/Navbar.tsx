@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, BookOpen, Phone, MessageSquare, ShieldCheck } from 'lucide-react';
+import { Menu, X, BookOpen, Phone, MessageSquare, ShieldCheck, Download } from 'lucide-react';
 
 interface NavbarProps {
   onOpenAdmin: () => void;
@@ -21,6 +21,23 @@ export default function Navbar({ onOpenAdmin, onScrollToSection }: NavbarProps) 
     { name: 'FAQs', id: 'faqs' },
     { name: 'Contact', id: 'contact' },
   ];
+
+  const handleDownloadOfflineHTML = () => {
+    import('../utils/htmlExporter').then(({ buildOfflineHTML }) => {
+      const htmlContent = buildOfflineHTML();
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'hemant_coaching_classes_offline.html';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }).catch(err => {
+      console.error('Error generating portable HTML file', err);
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -106,6 +123,15 @@ export default function Navbar({ onOpenAdmin, onScrollToSection }: NavbarProps) 
 
             {/* Desktop CTA Action Buttons */}
             <div className="hidden lg:flex items-center gap-3">
+              {/* Portable Offline App Export Button */}
+              <button
+                onClick={handleDownloadOfflineHTML}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-brand-gold/30 bg-brand-gold-light/40 text-[10px] font-mono tracking-wider uppercase text-brand-gold-dark hover:text-white hover:bg-brand-blue hover:border-brand-blue font-bold transition cursor-pointer"
+                title="Download portable single-file offline application"
+              >
+                <Download className="h-3.5 w-3.5" /> Download HTML App
+              </button>
+
               {/* Subtle Admin Mode link for testers */}
               <button
                 onClick={onOpenAdmin}
@@ -172,6 +198,13 @@ export default function Navbar({ onOpenAdmin, onScrollToSection }: NavbarProps) 
             </div>
 
             <div className="border-t border-slate-100 pt-4 flex flex-col gap-3">
+              <button
+                onClick={handleDownloadOfflineHTML}
+                className="w-full flex items-center justify-center gap-2 rounded-lg border border-brand-gold/40 bg-brand-gold-light/60 py-3 text-center text-xs font-bold uppercase tracking-wider text-brand-gold-dark hover:bg-brand-blue hover:text-white transition shadow-sm"
+              >
+                <Download className="h-4 w-4" /> Download Portable HTML
+              </button>
+
               <button
                 onClick={() => handleLinkClick('inquiry-form')}
                 className="w-full rounded-lg bg-brand-blue py-3 text-center text-xs font-bold uppercase tracking-wider text-white hover:bg-brand-blue-light transition shadow-md"

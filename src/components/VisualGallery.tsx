@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Image, ZoomIn, X, Sparkles, BookOpen, Star, HelpCircle } from 'lucide-react';
 import scienceLab from '../assets/images/science_lab_students_1781618034689.jpg';
-import studentLounge from '../assets/images/student_lounge_1781618051031.jpg';
-import heroClassroom from '../assets/images/classroom_hero_1781618014943.jpg';
+import studentLounge from '../assets/images/student_lounge_hq_1781706277936.jpg';
+import heroClassroom from '../assets/images/classroom_hero_hq_1781705629025.jpg';
 
 export default function VisualGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -48,7 +48,7 @@ export default function VisualGallery() {
   ];
 
   return (
-    <section id="gallery" className="relative py-24 bg-slate-50 overflow-hidden border-b border-slate-100 text-left">
+    <section id="gallery" className="relative py-24 bg-slate-50 border-b border-slate-100 text-left">
       <div className="absolute top-12 right-0 w-[400px] h-[400px] bg-brand-gold-light/10 rounded-full blur-3xl pointer-events-none" />
       
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">

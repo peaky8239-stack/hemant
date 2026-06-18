@@ -4,7 +4,7 @@ import {
   ArrowRight, Phone, MessageSquare, Award, Users, 
   MapPin, CheckCircle2, GraduationCap, Star
 } from 'lucide-react';
-import heroClassroom from '../assets/images/classroom_hero_1781618014943.jpg';
+import heroClassroom from '../assets/images/classroom_hero_hq_1781705629025.jpg';
 
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
@@ -14,7 +14,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
   return (
     <section 
       id="home"
-      className="relative bg-gradient-to-b from-slate-50 to-white pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden border-b border-slate-100"
+      className="relative bg-gradient-to-b from-slate-50 to-white pt-32 pb-20 md:pt-36 md:pb-24 border-b border-slate-100"
     >
       {/* Decorative clean academic backgrounds */}
       <div className="absolute inset-0 bg-[radial-gradient(#C69214_0.4px,transparent_0.4px)] [background-size:16px_16px] opacity-15 pointer-events-none" />
@@ -121,7 +121,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
                 <img 
                   src={heroClassroom} 
                   alt="Students studying inside a bright modern classroom at Hemant Classes Kalyanpur" 
-                  className="w-full h-[320px] sm:h-[400px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
+                  className="w-full h-[600px] min-h-[600px] sm:min-h-0 sm:h-[400px] object-cover hover:scale-105 transition-transform duration-500 rounded-xl animate-fade-in"
                   referrerPolicy="no-referrer"
                 />
                 
