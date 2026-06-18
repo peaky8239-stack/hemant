@@ -16,7 +16,7 @@ export default function Logo({ className = '', showText = true, light = false, i
     <svg
       id="hemant-logomark"
       viewBox="0 0 100 110"
-      className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10 flex-shrink-0 drop-shadow-sm transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1"
+      className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 lg:h-13 lg:w-13 flex-shrink-0 drop-shadow-sm transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -90,14 +90,14 @@ export default function Logo({ className = '', showText = true, light = false, i
       {showText && (
         <div className="flex flex-col text-left select-none">
           <span 
-            className={`font-sans font-black leading-none tracking-[0.05em] text-sm sm:text-base md:text-lg lg:text-xl uppercase transition-colors duration-300 ${
+            className={`font-sans font-black leading-none tracking-[0.05em] text-[15px] sm:text-lg md:text-xl lg:text-2xl uppercase transition-colors duration-300 ${
               light ? 'text-white' : 'text-slate-900 group-hover:text-brand-blue'
             }`}
           >
             HEMANT
           </span>
           <span 
-            className="text-[7.5px] sm:text-[8.5px] md:text-[9.5px] lg:text-[11px] font-sans font-extrabold tracking-[0.14em] sm:tracking-[0.18em] uppercase whitespace-nowrap mt-1 leading-none text-brand-gold"
+            className="text-[8.5px] sm:text-[10px] md:text-[11px] lg:text-[12.5px] font-sans font-extrabold tracking-[0.14em] sm:tracking-[0.18em] uppercase whitespace-nowrap mt-1.5 leading-none text-brand-gold"
           >
             COACHING CLASSES —
           </span>
